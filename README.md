@@ -8,7 +8,7 @@ and the TTL for all stanzas should be either a number of the string "TTL".
 
 Each file should also contain a TXT RR that describes the specific badness.
 
-Here's an example: [publen.bad.stanza](badpublen.bad.stanza) - that has one 
+Here's an example: [publen.bad.stanza](publen.bad.stanza) - that has one 
 HTTPS RR, containing an ECHConfigList with 3 entries, the first of which has a
 bad length (0x21 instead of 0x20) for the x25519 public key contained therein.
 
