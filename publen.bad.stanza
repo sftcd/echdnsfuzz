@@ -1,0 +1,22 @@
+
+; This has one HTTPS RR, containing an ECHConfigList with 3 entries, 
+; the first of which has a bad length (0x21 instead of 0x20) for the 
+; x25519 public key contained therein.
+
+OWNER TTL IN TXT "publen.bad.stanza: 0x21 length for x5519 public instead of 0x20"
+
+OWNER TTL IN TYPE65 \# 201 (
+                    0001 0000 0500 c200 c0fe 0d00 3c02 0020
+                    0021 ae5f 0d36 fe55 16c6 0322 c218 59ce
+                    390f d752 f1a1 3c22 e132 f10c 7fe0 32d5
+                    4121 0004 0001 0001 000d 636f 7665 722e
+                    6465 666f 2e69 6500 00fe 0d00 3c87 0020
+                    0020 e4e2 5efc 9c40 9e41 395d e1b6 1ef3
+                    0752 ff0b eac2 6f94 9471 099b e9ba d51e
+                    5c71 0004 0001 0001 000d 636f 7665 722e
+                    6465 666f 2e69 6500 00fe 0d00 3ca5 0020
+                    0020 73e9 5f87 091f 2770 1060 36ad 6680
+                    a955 d768 1936 94e3 d648 b50a 707b 8b8c
+                    bc0c 0004 0001 0001 000d 636f 7665 722e
+                    6465 666f 2e69 6500 00 )
+
