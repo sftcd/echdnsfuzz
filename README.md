@@ -10,6 +10,8 @@ overridden to match where the values will be published in the DNS.
 Each file should also contain a TXT RR that describes the specific badness to help with 
 identifying cases where these DNS RR values produce errors in someone's ECH client code.
 
+Seems useful to also include a comment in each file as to how it was generated.
+
 Here's an example: [publen.bad.stanza](publen.bad.stanza) - that has one 
 HTTPS RR, containing an ECHConfigList with 3 entries, the first of which has a
 bad length (0x21 instead of 0x20) for the x25519 public key contained therein.

@@ -1,0 +1,12 @@
+
+; This has one HTTPS RR, containing 60 random octets produced using
+; dd if=/dev/urandom count=60 bs=1 | xxd
+
+OWNER TTL IN TXT "random.bad.stanza: just 60 random octets..."
+
+OWNER TTL IN TYPE65 \# 60 (
+                1aca 2a97 1c5b 505c b451 6a47 67e5 d7fe
+                6b2c 68a2 817c 3b71 09b0 5d3a 8636 8627
+                8da4 e3b7 bebb 618c aa8f e5c7 4bd2 7f10
+                954a 194a 0e55 4980 5923 ecfb ) 
+
