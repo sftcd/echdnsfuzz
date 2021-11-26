@@ -30,7 +30,6 @@ GREASE.
 Here's an example of how to access these values:
 
 ```
-# TODO: add in outputs once those're published
 # Read the descriptive TXT RR
 $ dig +short TXT _13413._https.draft-13.esni.defo.ie
 "publen.bad.stanza: 0x21 length for x5519 public instead of 0x20"
