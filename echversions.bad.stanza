@@ -1,0 +1,35 @@
+; This has one HTTPS RR, with an ECHConfigList that has 6 entries
+; with different ECHConfig versions [13,10,9,13,10,13], depending
+; on your runtime support you might be able to parse some or all
+; of those. This is the same ECHConfigList as present in the
+; OpenSSL test/sslapitest.c source
+
+OWNER TTL IN TXT "echversions.bad.stanza: mixed versions in one ECHConfigList"
+
+OWNER TTL IN TYPE65 \# 386 (
+            0001 0000 0501 7b01 79fe 0d00 3ac5 0020 
+            0020 66e7 8292 20f5 eefa 942a da86 35f3 
+            7c2d df26 f1ec 229b 0585 f4a2 03ea e6ee 
+            857a 0004 0001 0001 000b 6578 616d 706c 
+            652e 636f 6d00 00fe 0a00 3cd2 0020 0020 
+            83fe d10b 7458 6045 dc7e 5fcf c1ee 8554 
+            5308 432e 1d2e 0a86 eea2 6d1f faa8 4478 
+            0004 0001 0001 0000 000b 6578 616d 706c 
+            652e 636f 6d00 00fe 0900 3b00 0b65 7861 
+            6d70 6c65 2e63 6f6d 0020 a324 2bf9 c3fc 
+            9a1e 36ce 73a9 d5b8 cfc6 92c2 062e 00d1 
+            fb6d b6bf 0c3d 7449 3c17 0020 0004 0001 
+            0001 0000 0000 fe0d 003a 4300 2000 2077 
+            c6c3 54b5 2822 a626 2952 45ba 392a eb83 
+            4dc8 e332 0434 c15a d094 76f8 c9b5 5b00 
+            0400 0100 0100 0b65 7861 6d70 6c65 2e63 
+            6f6d 0000 fe0a 003c 0300 2000 207d 01a0 
+            0762 2425 fcf2 0bfc 9d8a 4655 7e41 a460 
+            5af7 24f4 3da7 372b 0c7a 8bc5 1100 0400 
+            0100 0100 0000 0b65 7861 6d70 6c65 2e63 
+            6f6d 0000 fe0d 003a 4300 2000 20dc 6480 
+            31ec e70e 890b a4f7 4555 eff0 cee2 5150 
+            af92 3767 0f6d 55b2 bc30 6c35 7600 0400 
+            0100 0100 0b65 7861 6d70 6c65 2e63 6f6d 
+            0000  )
+
