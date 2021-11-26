@@ -1,0 +1,36 @@
+; This has three HTTPS RRs, each containing a good singleton ECHConfigList
+; with some different algorithm choices. The public names here are "example.com"
+; This was produced by just grabbing some PRM files in use by agiletest.sh
+
+OWNER TTL IN TXT "3rrs.bad.stanza: just 60 random octets..."
+
+OWNER TTL IN TYPE65 \# 95 (
+            0001 0000 0500 5800 56fe 0d00 5299 0021 
+            0038 bf69 7093 f689 0752 2046 2414 8fa3 
+            1c0e 7598 b44b 4d72 1ca8 6fa5 80ec 9b97 
+            e480 8889 19ca fd21 15dc 9a57 8c27 7172 
+            475a 8915 d2d8 e143 09ba 0004 0002 0003 
+            000b 6578 616d 706c 652e 636f 6d00 00
+                           )
+
+OWNER TTL IN TYPE65 \# 104 (
+            0001 0000 0500 6100 5ffe 0d00 5b84 0010 
+            0041 049e e83f bc62 4651 927b da92 8c12 
+            d6ad 236f 17d2 b7e0 66bb aeeb 3133 640c 
+            c2df 50ae 4df0 8fea 036a eb4a 6530 16b8 
+            1910 c218 117e 2f15 009e 4189 84c5 561c 
+            8695 f100 0400 0300 0100 0b65 7861 6d70 
+            6c65 2e63 6f6d 0000 
+                           )
+
+OWNER TTL IN TYPE65 \# 136 (
+            0001 0000 0500 8100 7ffe 0d00 7bb3 0011 
+            0061 042a af7d 0872 1b55 69bf 76c1 2bd1 
+            cbc1 7224 8c6e b1f8 a000 d2e5 4850 6915 
+            1799 996d 3c75 81c6 4256 397f c181 b3bf 
+            63a0 19e8 ba34 4421 3b28 56b5 ebfb 0368 
+            f304 d172 6124 4a88 89ca 3e30 0292 ae4f 
+            a318 bb5a 8660 0904 df37 2792 b864 5e19 
+            1619 8d00 0400 0300 0100 0b65 7861 6d70 
+            6c65 2e63 6f6d 0000 
+                           )

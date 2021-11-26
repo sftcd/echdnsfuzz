@@ -3,7 +3,7 @@
 Collection of zone file stanzas containing dodgy HTTPS RR values, to help with fuzz testing ECH.
 
 Entries should be files suitable for inclusion in a standard zone file. Each such file should be
-called ``<something>.bad.stanzas``. The owner name for all stanzas should be the string "OWNER"
+called ``<something>.bad.stanza``. The owner name for all stanzas should be the string "OWNER"
 and the TTL for all stanzas should be either a number of the string "TTL" so that both can be
 overridden to match where the values will be published in the DNS. 
 
