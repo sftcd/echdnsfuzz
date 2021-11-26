@@ -37,5 +37,6 @@ we do have an ECH enabled instance of lighttpd running).  In probably most cases
 client should exit before making a connection, in other cases, the client may
 connect and have it's ECH attempt treated as GREASE.
 
-Happy to take PRs, especially with addition test cases.
+Happy to take PRs, especially with additional test cases.
+
 
