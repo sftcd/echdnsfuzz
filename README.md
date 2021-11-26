@@ -27,4 +27,17 @@ In some cases the client should exit before making a connection, in other
 cases, the client may connect and have it's ECH attempt treated as 
 GREASE.
 
+Here's an example of how to access these values:
+
+```
+# TODO: add in outputs once those're published
+# Read the descriptive TXT RR
+$ dig +short TXT _13413._https.draft-13.esni.defo.ie
+"publen.bad.stanza: 0x21 length for x5519 public instead of 0x20"
+# Read the HTTPS RR
+$ dig +short -t TYPE65 _13413._https.draft-13.esni.defo.ie
+\# 201 000100000500C200C0FE0D003C0200200021AE5F0D36FE5516C60322 C21859CE390FD752F1A13C22E132F10C7FE032D54121000400010001 000D636F7665722E6465666F2E69650000FE0D003C8700200020E4E2 5EFC9C409E41395DE1B61EF30752FF0BEAC26F949471099BE9BAD51E 5C71000400010001000D636F7665722E6465666F2E69650000FE0D00 3CA50020002073E95F87091F2770106036AD6680A955D768193694E3 D648B50A707B8B8CBC0C000400010001000D636F7665722E6465666F 2E69650000
+
+```
+
 Happy to take PRs, especially with addition test cases.
