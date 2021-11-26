@@ -27,7 +27,7 @@ $ dig +short -t TYPE65 _13413._https.draft-13.esni.defo.ie
 
 ```
 
-In our [defo.ie](https://defo.ie) deployment, each hour, (at :33) a cronjob
+In our [defo.ie](https://defo.ie) deployment, twice each hour, (at :13 and :43) a cronjob
 randomly selects one of the bad stanza files from this repo to publish with an
 owner of ``_13413._https.draft-13.esni.defo.ie`` and, if not overidden, a TTL
 of 10 seconds.  If the selected file is somehow malformed, then no bad records
