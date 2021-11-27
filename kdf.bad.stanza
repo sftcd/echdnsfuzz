@@ -1,0 +1,12 @@
+
+; This has one HTTPS RR, containing one ECHConfigList with 1 entry, 
+; that has a bad KDF id (0ff)
+
+OWNER TTL IN TXT "kdf.bad.stanza: 0xff as unknown KEM id"
+
+OWNER TTL IN TYPE65 \# 64 (
+            003e fe0d 003a e700  2000 203c c153 7606
+            db1c 3a5d ef42 1794  cc77 8891 598a 222c
+            9d52 10c2 9620 388b  2411 0b00 0400 ff00
+            0100 0b65 7861 6d70  6c65 2e63 6f6d 0000
+                            )
