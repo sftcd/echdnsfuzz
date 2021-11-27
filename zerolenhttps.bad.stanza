@@ -1,0 +1,7 @@
+
+; This has one HTTPS RR, containing a zero length HTTPS
+
+OWNER TTL IN TXT "zerolen.bad.stanza: nothing there at all;-)"
+
+OWNER TTL IN TYPE65 \# 0 ( )
+

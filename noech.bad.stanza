@@ -1,0 +1,13 @@
+; An HTTPS RR with no ech information at all (this is just taken from
+; the HTTPS RR published by cloudflare for rte.ie) - there're loads
+; of IP adresses etc
+
+OWNER TTL IN TXT "noech.bad.stanza - a real HTTPS RR with no ech stuff"
+
+OWNER TTL IN	TYPE65	\# 79  (
+            0001 0000 0100 1802 6833 0568 332D 3239 
+            0568 332D 3238 0568 332D 3237 0268 3200 
+            0400 0868 128E 1168 128F 1100 0600 2026 
+            0647 0000 0000 0000 0000 0068 128E 1126 
+            0647 0000 0000 0000 0000 0068 128F 11
+                )
