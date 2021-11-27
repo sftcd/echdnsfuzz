@@ -37,6 +37,9 @@ ECH-enabled clients can then attempt connection to draft-13.esni.defo.ie port
 probably most cases the client should exit before making a connection, in other
 cases, the client may connect and have it's ECH attempt treated as GREASE.
 
+It's on my todo list to add more automation so a client attempts to connect
+there twice an hour and reports back on unexpected results.
+
 Happy to take PRs, especially with additional test cases.
 
 
