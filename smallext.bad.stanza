@@ -1,0 +1,12 @@
+; Singleton ECHConfigList but with two extension values, both of which
+; (rightly) bemoan the existence of extensions with ECHConfig values
+; which isn't... clever. The makecatexts.sh script helped here.
+
+OWNER TTL IN TXT "smallext.bad.stanza: two small, but dim, ECHConfig extensions"
+
+OWNER TTL IN TYPE65 \# 71 (
+            0001 0000 0500 4000 3efe 0d00 3ae7 0020 
+            0020 3cc1 5376 06db 1c3a 5def 4217 94cc 
+            7788 9159 8a22 2c9d 5210 c296 2038 8b24 
+            110b 0004 0001 0001 000b 6578 616d 706c 
+            652e 636f 6d00 00 )
