@@ -7,6 +7,10 @@ called ``<something>.bad.stanza``. The owner name for all stanzas should be the 
 and the TTL for all stanzas should be either a number of the string "TTL" so that both can be
 overridden to match where the values will be published in the DNS. 
 
+(Files named ``<something>.bad.not4bind`` used be published but turn out to be
+disliked by bind as they break generic DNS rules, so presumably won't much be
+seen in the wild.)
+
 Each file should also contain a TXT RR that describes the specific badness to help with 
 identifying cases where these DNS RR values produce errors in someone's ECH client code.
 

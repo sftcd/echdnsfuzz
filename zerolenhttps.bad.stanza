@@ -1,7 +1,8 @@
 
-; This has one HTTPS RR, containing a zero length HTTPS
+; This has one HTTPS RR, containing nothing beyond the 
+; priority and "." as TargetName
 
 OWNER TTL IN TXT "zerolen.bad.stanza: nothing there at all;-)"
 
-OWNER TTL IN TYPE65 \# 0 ( )
+OWNER TTL IN TYPE65 \# 0 ( 000100 )
 
